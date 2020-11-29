@@ -4,13 +4,9 @@ export default function() {
       title: "Raport",
       to: "/blog-overview",
       htmlBefore: '<i class="material-icons">edit</i>',
-      htmlAfter: ""
+      htmlAfter: "",
     },
-    {
-      title: "Zgłoszenia",
-      htmlBefore: '<i class="material-icons">table_chart</i>',
-      to: "/tables",
-    },
+
     {
       title: "Mapa",
       htmlBefore: '<i class="material-icons">vertical_split</i>',
