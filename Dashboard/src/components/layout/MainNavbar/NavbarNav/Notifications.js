@@ -6,7 +6,7 @@ export default class Notifications extends React.Component {
     super(props);
 
     this.state = {
-      visible: false
+      visible: false,
     };
 
     this.toggleNotifications = this.toggleNotifications.bind(this);
@@ -14,7 +14,7 @@ export default class Notifications extends React.Component {
 
   toggleNotifications() {
     this.setState({
-      visible: !this.state.visible
+      visible: !this.state.visible,
     });
   }
 
@@ -43,11 +43,11 @@ export default class Notifications extends React.Component {
               </div>
             </div>
             <div className="notification__content">
-              <span className="notification__category">Analytics</span>
+              <span className="notification__category">Sightings</span>
               <p>
-                Your website’s active users count increased by{" "}
+                Wild boar sightings increased by{" "}
                 <span className="text-success text-semibold">28%</span> in the
-                last week. Great job!
+                last week.
               </p>
             </div>
           </DropdownItem>
@@ -58,11 +58,10 @@ export default class Notifications extends React.Component {
               </div>
             </div>
             <div className="notification__content">
-              <span className="notification__category">Sales</span>
+              <span className="notification__category">ASF</span>
               <p>
-                Last week your store’s sales count decreased by{" "}
-                <span className="text-danger text-semibold">5.52%</span>. It
-                could have been worse!
+                Reported ASF cases decreased by{" "}
+                <span className="text-danger text-semibold">5.52%</span>.
               </p>
             </div>
           </DropdownItem>
